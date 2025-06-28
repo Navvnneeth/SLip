@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.webcamBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #4b5563;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #f3f4f6;
+}
+
+.webcam {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.captureButton,
+.retakeButton,
+.openButton {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.captureButton:hover,
+.retakeButton:hover,
+.openButton:hover {
+  background-color: #1d4ed8;
+}
+
+.previewBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.capturedImage {
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
