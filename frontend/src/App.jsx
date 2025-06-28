@@ -1,7 +1,7 @@
 import React from 'react'
 import Login from './pages/Login.jsx'
 import {Route, Routes} from 'react-router-dom'
-import Signup from './pages/signup.jsx'
+import Signup from './pages/Signup.jsx'
 import Home from './pages/home.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Add from './pages/Add.jsx'
