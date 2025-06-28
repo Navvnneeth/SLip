@@ -2,10 +2,10 @@ import React from 'react'
 import Login from './pages/Login.jsx'
 import {Route, Routes} from 'react-router-dom'
 import Signup from './pages/Signup.jsx'
-import Home from './pages/home.jsx'
+import Home from './pages/Home.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Add from './pages/Add.jsx'
-import Edit from './pages/edit.jsx'
+import Edit from './pages/Edit.jsx'
 import WebcamCapture from './pages/WebcamCapture.jsx'
 
 const App = () => {
