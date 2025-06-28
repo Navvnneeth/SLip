@@ -3,8 +3,17 @@ from PIL import Image
 import io
 import numpy as np
 import re
+import os
+from dotenv import load_dotenv
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+load_dotenv()
+
+TESSERACT_PATH = os.getenv("TESSERACT_PATH")
+
+if TESSERACT_PATH:
+    pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+
+#pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 def extract_text(image_bytes):
     image = Image.open(io.BytesIO(image_bytes))

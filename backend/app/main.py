@@ -21,10 +21,12 @@ db_models.Base.metadata.create_all(bind = engine)
 
 origins = [origin.strip() for origin in os.getenv("ALLOWED_ORIGINS", "").split(",")]
 
+allow_credentials = os.getenv("ALLOW_CREDENTIALS", "false").lower() == "true"
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  
-    allow_credentials=True,
+    allow_origins=origins,
+    allow_credentials=allow_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )
