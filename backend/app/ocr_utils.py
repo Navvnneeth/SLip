@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 TESSERACT_PATH = os.getenv("TESSERACT_PATH")
+print(TESSERACT_PATH)
 
 if TESSERACT_PATH:
     pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
